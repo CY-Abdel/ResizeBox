@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Artifika&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Artifika', sans-serif;
+}
+
+.main {
+    flex-direction: column;
+    display: flex;
+    height: 100vh; 
+}
+.main .top {
+    display: flex;
+    flex: 0 0 60%;
+    flex-direction: row;
+    overflow: hidden;
+}
+.main .top .box-1 {
+    background: #77BCFD;
+    flex: 0 0 50%;
+    position: relative;
+}
+.main .top .box-1 .box-1-container {
+    max-height: 100%;
+    overflow: auto;
+    padding: 0.5rem 2rem;
+}
+.main .top .drag-x {
+    background: linear-gradient(360deg, gray 50%, white 110%);
+    cursor: col-resize;
+    flex: 0 0 8px;
+}
+.main .top .box-2 {
+    background: url(https://www.linfodurable.fr/sites/linfodurable/files/styles/landscape_w800/public/2017-12/matrix-1735640_1920.jpg?h=21db9bcf&itok=qISVGSCK ) center/cover;
+    flex: 1;
+}
+.main .drag-y {
+    background: linear-gradient(90deg, gray 55%, white 110%);
+    cursor: row-resize;
+    caret-color: auto;
+    flex: 0 0 8px;
+    z-index: 10;
+}
+.main .bottom {
+    background: #ebc989e7;
+    flex: 1;
+    overflow: hidden; 
+}
+.main .bottom .bottom-container {
+    max-height: 100%;
+    overflow: auto;
+    display: flex;
+}
+.main .bottom .bottom-container h3 {
+    padding: 3rem;
+}
+.main .bottom .bottom-container p {
+    padding: 3rem;
+}
+
+
+
+/* Signature Github */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+
+.signature {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(51, 51, 51, 0.808);
+    padding: .5rem .5rem;
+    border-radius: 50px;
+    box-shadow: 0 0 0px 3px rgb(9,251,186);
+    color: rgb(9,251,186);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.signature h3 {
+    margin: 0;
+}
+
+.signature:hover {
+    transform: translateX(3px);
+    background: linear-gradient(90deg, rgba(51, 51, 51, 0.808) 30%, rgba(100, 100, 100, 0.808) 100% );
+    transition: .3s ease;
+    box-shadow: 0 0 0px 3px rgb(79, 250, 204);
+    color: rgb(79, 250, 204);
+}
+.signature:focus {
+    outline: none;
+}
+.signature .flag {
+    height: 13px;
+    width: 22px;
+    background: url('https://kabyle.com/wp-content/uploads/2019/06/amazigh-flag.jpg') no-repeat center/cover;
+    
+    /* Le Drapeau Français */
+    /* background: linear-gradient(90deg, blue 36%, white 36%, white 67%, red 67%); */
+    box-shadow: inset 2px 2px 2px #222, 2px 2px 1px #222;
+    margin-right: 6px;
+    transform: translateY(2px);
+}
+
+.signature i {
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 1px #222;
+    transform: translateY(2px);
+}
+
+
